@@ -1,6 +1,8 @@
 tasks:
   unit-tests:
     docker:
-      image: ruby
+      image: ruby:2.3
       commands:
+        - gem install bundler
+        - bundle install --with development
         - bundle exec rspec
