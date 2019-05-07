@@ -1,6 +1,9 @@
 tasks:
+  build-image:
+    build:
+      image: dinesh/stokla
   unit-tests:
     docker:
-      image: ruby
+      image: dinesh/stokla
       commands:
         - bundle exec rspec
